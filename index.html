@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Танцы 360° — школа танцев в Курске</title>
+<meta name="description" content="Школа танцев «Танцы 360°» в Курске: детский, классический и современный танец, гимнастика, акробатика, ритмика. Запишитесь на пробное занятие.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f0d17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238a5cff'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E360%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg:#0f0d17; --card:#181526; --ink:#f4f1fb; --mut:#a8a1bd; --a1:#ff5fa8; --a2:#8a5cff; --line:#2a2540; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+  a { color:inherit; }
+  nav { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:12px 16px; background:#0f0d17dd; backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  nav b { font-size:20px; background:linear-gradient(90deg,var(--a1),var(--a2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  nav div { display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+  nav a { text-decoration:none; color:var(--mut); }
+  nav a:hover { color:var(--ink); }
+  .btn { display:inline-block; padding:13px 24px; border:0; border-radius:12px; background:linear-gradient(90deg,var(--a1),var(--a2)); color:#fff; font:inherit; font-weight:700; text-decoration:none; cursor:pointer; }
+  .hero { padding:88px 16px 72px; text-align:center; background:linear-gradient(180deg,#0f0d17a6 0%,#0f0d17ee 100%),url("photos/photo5.jpg") center 35%/cover no-repeat; }
+  .gal { display:grid; gap:10px; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); }
+  .gal figure { margin:0; position:relative; border-radius:14px; overflow:hidden; border:1px solid var(--line); background:var(--card); }
+  .gal img { display:block; width:100%; height:260px; object-fit:cover; }
+  .gal figcaption { position:absolute; left:0; right:0; bottom:0; padding:22px 12px 10px; font-size:13px; background:linear-gradient(0deg,#000c,#0000); }
+  .about { display:grid; gap:20px; grid-template-columns:1fr; align-items:center; }
+  .about img { width:100%; max-height:420px; object-fit:cover; border-radius:16px; border:1px solid var(--line); }
+  @media (min-width:720px){ .about { grid-template-columns:1fr 1fr; } }
+  .hero h1 { margin:0 0 12px; font-size:clamp(30px,6vw,52px); line-height:1.1; }
+  .hero h1 span { background:linear-gradient(90deg,var(--a1),var(--a2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .hero p { margin:0 auto 26px; max-width:560px; color:var(--mut); font-size:18px; }
+  section { max-width:960px; margin:0 auto; padding:44px 16px; }
+  h2 { margin:0 0 20px; font-size:28px; }
+  .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+  .card h3 { margin:0 0 6px; font-size:18px; }
+  .card p { margin:0; color:var(--mut); font-size:14px; }
+  .ico { font-size:28px; margin-bottom:8px; }
+  .lead { color:var(--mut); max-width:640px; margin:-8px 0 22px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  th,td { padding:13px 14px; text-align:left; border-bottom:1px solid var(--line); font-size:15px; vertical-align:top; }
+  th { color:var(--mut); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.5px; }
+  tr:last-child td { border-bottom:0; }
+  .tag { display:inline-block; padding:2px 10px; margin:2px 4px 2px 0; border-radius:20px; background:#2a2145; font-size:13px; }
+  .price { display:flex; justify-content:space-between; gap:12px; padding:14px 16px; background:var(--card); border:1px solid var(--line); border-radius:14px; }
+  .price span:last-child { font-weight:700; color:var(--a1); white-space:nowrap; }
+  .prices { display:grid; gap:10px; }
+  form { display:grid; gap:12px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  label { font-size:13px; color:var(--mut); }
+  input,select { width:100%; margin-top:4px; padding:12px; border-radius:10px; border:1px solid var(--line); background:#100e1b; color:var(--ink); font:inherit; }
+  #res { display:none; margin-top:14px; padding:14px; border:1px solid #3b6b4a; border-radius:12px; background:#14241b; white-space:pre-wrap; font-size:14px; }
+  .note { font-size:12px; color:var(--mut); margin-top:10px; }
+  .contacts p { margin:6px 0; }
+  footer { padding:28px 16px; text-align:center; color:var(--mut); font-size:13px; border-top:1px solid var(--line); }
+  .draft { background:#3a2a00; color:#ffd479; text-align:center; font-size:13px; padding:6px 12px; }
+  section, .hero { scroll-margin-top:64px; }
+  .gal img { object-position:center 25%; }
+  .gal img, .about img { cursor:zoom-in; transition:transform .35s ease, filter .35s ease; }
+  .gal figure:hover img { transform:scale(1.04); filter:brightness(1.08); }
+  .gal figure { cursor:zoom-in; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline:2px solid var(--a1); outline-offset:2px; }
+  input:focus, select:focus { border-color:var(--a2); }
+  /* лайтбокс: плавное открытие фото */
+  #lb { position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center; background:#06050bf0; opacity:0; visibility:hidden; transition:opacity .3s ease, visibility 0s linear .3s; }
+  #lb.open { opacity:1; visibility:visible; transition:opacity .3s ease; }
+  #lb figure { margin:0; max-width:94vw; text-align:center; transform:scale(.94); transition:transform .35s ease; }
+  #lb.open figure { transform:scale(1); }
+  #lb img { display:block; max-width:94vw; max-height:80vh; margin:0 auto; border-radius:12px; object-fit:contain; opacity:1; transition:opacity .25s ease; }
+  #lb img.swap { opacity:0; }
+  #lb figcaption { margin-top:12px; color:var(--mut); font-size:14px; min-height:21px; }
+  #lb button { position:absolute; border:0; background:#ffffff1a; color:#fff; width:46px; height:46px; border-radius:50%; font-size:24px; cursor:pointer; backdrop-filter:blur(6px); transition:background .2s; }
+  #lb button:hover { background:#ffffff33; }
+  #lb .x { top:14px; right:14px; }
+  #lb .p { left:12px; top:50%; margin-top:-23px; }
+  #lb .n { right:12px; top:50%; margin-top:-23px; }
+  #lb .c { position:absolute; bottom:16px; left:0; right:0; text-align:center; color:var(--mut); font-size:13px; }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} #lb, #lb figure, .gal img { transition:none !important } }
+  @media (max-width:560px){ th,td{ padding:10px 8px; font-size:14px; } }
+</style>
+</head>
+<body>
+<div class="draft">Черновик на согласование</div>
+<nav>
+  <b>ТАНЦЫ 360°</b>
+  <div><a href="#directions">Программа</a><a href="#schedule">Расписание</a><a href="#prices">Цены</a><a href="#book">Запись</a><a href="#contacts">Контакты</a></div>
+</nav>
+
+<div class="hero">
+  <h1>Школа танцев <span>«Танцы 360°»</span></h1>
+  <p>Полный оборот к совершенству! Курск, дети от 3 лет. Шесть дисциплин в одной программе: ребёнок развивается всесторонне и приходит к результату.</p>
+  <a class="btn" href="#book">Записаться на пробное</a>
+</div>
+
+<section id="about">
+  <div class="about">
+    <img src="photos/photo1.jpg" alt="Занятие в студии «Танцы 360°»">
+    <div>
+      <h2>Танцы для детей от 3 лет</h2>
+      <p class="lead" style="margin:0 0 14px">Хотите, чтобы ваш ребёнок научился красиво танцевать, погрузился в дружескую атмосферу и достигал новых результатов? Тогда вам к нам. Группы по возрасту, просторный зал, инвентарь для гимнастики и акробатики.</p>
+      <a class="btn" href="#book">Записаться на пробное</a>
+    </div>
+  </div>
+</section>
+
+<section id="directions">
+  <h2>Программа: шесть дисциплин в одной</h2>
+  <p class="lead">У нас не выбирают одно направление: каждый ученик проходит все дисциплины, потому что мы нацелены на результат.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🧸</div><h3>Детский танец</h3><p>Первые шаги в танце: движение, музыка, уверенность.</p></div>
+    <div class="card"><div class="ico">🩰</div><h3>Классический танец</h3><p>Осанка, пластика, основа любого стиля.</p></div>
+    <div class="card"><div class="ico">💃</div><h3>Современный танец</h3><p>Свободное движение и современные стили.</p></div>
+    <div class="card"><div class="ico">🤸</div><h3>Гимнастика</h3><p>Гибкость, сила, координация.</p></div>
+    <div class="card"><div class="ico">🌀</div><h3>Акробатика</h3><p>Кувырки, стойки, трюки под присмотром тренера.</p></div>
+    <div class="card"><div class="ico">🥁</div><h3>Ритмика</h3><p>Чувство ритма и слуха, музыкальность.</p></div>
+  </div>
+</section>
+
+<section id="why">
+  <h2>Почему выбирают нас</h2>
+  <div class="grid">
+    <div class="card"><div class="ico">🏅</div><h3>Профессионалы своего дела</h3><p>С детьми работают профессионалы.</p></div>
+    <div class="card"><div class="ico">🤝</div><h3>Дружный коллектив</h3><p>Поможет преодолеть все препятствия на пути обучения.</p></div>
+    <div class="card"><div class="ico">❤️</div><h3>Любовь к детям</h3><p>Наш фирменный ингредиент — любовь.</p></div>
+    <div class="card"><div class="ico">🛡️</div><h3>Безопасный зал</h3><p>Зал оборудован по всем правилам профессиональной танцевальной подготовки и техники безопасности, только профессиональное напольное покрытие.</p></div>
+  </div>
+</section>
+
+<section id="studio">
+  <h2>Наша студия</h2>
+  <div class="gal">
+    <figure><img src="photos/photo2.jpg" alt="Зал студии" loading="lazy"><figcaption>Зал для занятий</figcaption></figure>
+    <figure><img src="photos/photo3.jpg" alt="Зал студии" loading="lazy"><figcaption>Светлый зал</figcaption></figure>
+    <figure><img src="photos/photo4.jpg" alt="Инвентарь" loading="lazy"><figcaption>Инвентарь для занятий</figcaption></figure>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Расписание</h2>
+  <table>
+    <thead><tr><th>Группа</th><th>Дни и время</th></tr></thead>
+    <tbody>
+      <tr><td><b>3–4 года</b></td><td><span class="tag">вт 17:30</span><span class="tag">чт 17:30</span><span class="tag">сб 10:00</span></td></tr>
+      <tr><td><b>5–7 лет</b></td><td><span class="tag">пн 17:00</span><span class="tag">вт 18:30</span><span class="tag">чт 18:30</span><span class="tag">сб 11:00</span></td></tr>
+      <tr><td><b>8–12 лет</b></td><td><span class="tag">пн 18:30</span><span class="tag">ср 18:30</span><span class="tag">пт 18:30</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="results">
+  <h2>Выступления и награды</h2>
+  <div class="gal">
+    <figure><img src="photos/photo7.jpg" alt="Команда студии с кубком" loading="lazy"><figcaption>Наша команда</figcaption></figure>
+    <figure><img src="photos/photo8.jpg" alt="Дипломы фестиваля «Просторы»" loading="lazy"><figcaption>Дипломы фестиваля «Просторы»</figcaption></figure>
+    <figure><img src="photos/photo9.jpg" alt="Фестиваль «Просторы», Курск" loading="lazy"><figcaption>Фестиваль «Просторы», Курск</figcaption></figure>
+    <figure><img src="photos/photo6.jpg" alt="Выступление" loading="lazy"><figcaption>Выступление</figcaption></figure>
+  </div>
+</section>
+
+<section id="prices">
+  <h2>Цены</h2>
+  <div class="prices" id="pr"></div>
+  <p class="note">Запишитесь на бесплатное пробное занятие: познакомитесь с тренером и студией.</p>
+</section>
+
+<section id="book">
+  <h2>Запись на пробное занятие</h2>
+  <form id="f">
+    <label>Имя родителя<input name="n" required autocomplete="name"></label>
+    <label>Телефон<input name="t" required type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ..." pattern="[0-9+()\-\s]{10,}" title="Введите номер телефона, например +7 900 000-00-00"></label>
+    <label>Возраст ребёнка
+      <select name="g">
+        <option>3–4 года</option><option>5–7 лет</option><option>8–12 лет</option><option>Другой возраст</option>
+      </select>
+    </label>
+    <label>Удобный день
+      <select name="d"><option>Любой</option><option>Понедельник</option><option>Вторник</option><option>Среда</option><option>Четверг</option><option>Пятница</option><option>Суббота</option></select>
+    </label>
+    <input name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <button class="btn" type="submit" id="sendBtn">Отправить заявку</button>
+  </form>
+  <div id="res"></div>
+  <p class="note">Или позвоните: <a href="tel:+79155197995">+7 (915) 519-79-95</a>. В черновике заявка никуда не уходит; в рабочей версии она придёт администратору студии.</p>
+</section>
+
+<section id="contacts" class="contacts">
+  <h2>Контакты</h2>
+  <p>📍 Курск, ул. Верхняя Луговая, 13В, 4 этаж · <a href="https://yandex.ru/maps/?text=%D0%9A%D1%83%D1%80%D1%81%D0%BA%2C%20%D0%92%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%9B%D1%83%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%2013%D0%92" target="_blank" rel="noopener">Показать на карте</a></p>
+  <p>📞 <a href="tel:+79155197995">+7 (915) 519-79-95</a></p>
+  <p>💬 <a href="https://vk.com/dance360kursk" target="_blank" rel="noopener">Мы во ВКонтакте</a></p>
+</section>
+
+<footer>© Танцы 360°, Курск</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="x" aria-label="Закрыть">×</button>
+  <button class="p" aria-label="Назад">‹</button>
+  <button class="n" aria-label="Вперёд">›</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <div class="c"></div>
+</div>
+
+<script>
+const PRICES = [["Пробное занятие","бесплатно"],["Абонемент на месяц","2 500 ₽"]];
+document.getElementById("pr").innerHTML = PRICES.map(p=>`<div class="price"><span>${p[0]}</span><span>${p[1]}</span></div>`).join("");
+// Адрес приёмника заявок (Cloudflare Worker, см. папку «заявки»). Пока пусто: сайт работает в демо-режиме.
+const LEAD_ENDPOINT = "";
+const t0 = Date.now();
+const resBox = document.getElementById("res"), sendBtn = document.getElementById("sendBtn");
+const say = (ok, msg) => { resBox.style.display = "block"; resBox.style.borderColor = ok ? "#3b6b4a" : "#7a3b3b"; resBox.style.background = ok ? "#14241b" : "#2a1616"; resBox.textContent = msg; };
+document.getElementById("f").onsubmit = async e => {
+  e.preventDefault();
+  const form = e.target, f = new FormData(form);
+  const data = { name: f.get("n"), phone: f.get("t"), age: f.get("g"), day: f.get("d"), hp: f.get("hp"), ms: Date.now() - t0 };
+  if (!LEAD_ENDPOINT) { // демо: показываем, как заявку увидит администратор
+    say(true, "Заявка принята. Так её увидит администратор:\n\nРодитель: " + data.name + "\nТелефон: " + data.phone + "\nВозраст ребёнка: " + data.age + "\nУдобный день: " + data.day);
+    form.reset(); return;
+  }
+  sendBtn.disabled = true; sendBtn.textContent = "Отправляем...";
+  try {
+    const r = await fetch(LEAD_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && j.ok) { say(true, "Спасибо! Заявка отправлена, администратор свяжется с вами в ближайшее время."); form.reset(); }
+    else say(false, "Не получилось отправить заявку. Позвоните нам: +7 (915) 519-79-95.");
+  } catch (err) {
+    say(false, "Нет связи. Позвоните нам: +7 (915) 519-79-95.");
+  }
+  sendBtn.disabled = false; sendBtn.textContent = "Отправить заявку";
+};
+
+// Плавный просмотр фото
+(() => {
+  const items = [...document.querySelectorAll(".about img, .gal img")];
+  const lb = document.getElementById("lb"), pic = lb.querySelector("img"), cap = lb.querySelector("figcaption"), cnt = lb.querySelector(".c");
+  let i = 0, sx = null;
+  const show = (n, first) => {
+    i = (n + items.length) % items.length;
+    const el = items[i];
+    const set = () => {
+      pic.src = el.src; pic.alt = el.alt;
+      const fc = el.closest("figure") && el.closest("figure").querySelector("figcaption");
+      cap.textContent = fc ? fc.textContent : el.alt;
+      cnt.textContent = (i + 1) + " / " + items.length;
+      pic.classList.remove("swap");
+    };
+    if (first) { set(); return; }
+    pic.classList.add("swap");
+    setTimeout(set, 180);
+    [1, -1].forEach(d => { const im = new Image(); im.src = items[(i + d + items.length) % items.length].src; });
+  };
+  const open = n => { show(n, true); lb.classList.add("open"); document.body.style.overflow = "hidden"; lb.querySelector(".x").focus(); };
+  const close = () => { lb.classList.remove("open"); document.body.style.overflow = ""; };
+  items.forEach((el, n) => {
+    el.tabIndex = 0;
+    el.addEventListener("click", () => open(n));
+    el.addEventListener("keydown", e => { if (e.key === "Enter") open(n); });
+  });
+  document.querySelectorAll(".gal figure").forEach(f => f.addEventListener("click", e => { if (e.target.tagName !== "IMG") f.querySelector("img").click(); }));
+  lb.querySelector(".x").onclick = close;
+  lb.querySelector(".p").onclick = () => show(i - 1);
+  lb.querySelector(".n").onclick = () => show(i + 1);
+  lb.addEventListener("click", e => { if (e.target === lb) close(); });
+  document.addEventListener("keydown", e => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(i - 1);
+    if (e.key === "ArrowRight") show(i + 1);
+  });
+  lb.addEventListener("touchstart", e => { sx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", e => {
+    if (sx === null) return;
+    const dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) > 50) show(i + (dx < 0 ? 1 : -1));
+  });
+})();
+</script>
+</body>
+</html>
