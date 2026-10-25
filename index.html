@@ -205,7 +205,7 @@
 const PRICES = [["Пробное занятие","бесплатно"],["Абонемент на месяц","2 500 ₽"]];
 document.getElementById("pr").innerHTML = PRICES.map(p=>`<div class="price"><span>${p[0]}</span><span>${p[1]}</span></div>`).join("");
 // Адрес приёмника заявок (Cloudflare Worker, см. папку «заявки»). Пока пусто: сайт работает в демо-режиме.
-const LEAD_ENDPOINT = "";
+const LEAD_ENDPOINT = "https://dance360-zayavki.sashasmeckoy2008.workers.dev";
 const t0 = Date.now();
 const resBox = document.getElementById("res"), sendBtn = document.getElementById("sendBtn");
 const say = (ok, msg) => { resBox.style.display = "block"; resBox.style.borderColor = ok ? "#3b6b4a" : "#7a3b3b"; resBox.style.background = ok ? "#14241b" : "#2a1616"; resBox.textContent = msg; };
